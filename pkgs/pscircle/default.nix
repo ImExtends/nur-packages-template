@@ -17,7 +17,7 @@ stdenv.mkDerivation rec {
     description = "Allows you to your linux processes as a tree";
     license = licenses.mit;
     homepage = "https://gitlab.com/mildlyparallel/pscircle";
-    maintainers = [ maintainers.extends ];
+    maintainers = [ "Extends <sharosari@gmail.com>" ];
     platforms = platforms.linux;
   };
 }
