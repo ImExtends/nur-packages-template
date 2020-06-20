@@ -6,9 +6,11 @@ stdenv.mkDerivation rec {
   src = fetchFromGitHub {
     owner = "phisch";
     repo = "giph";
-    rev = "v${version}";
+    rev = "e34d55f61b094403521222eaec3c85bf45d3a4c0";
     sha256 = "1kd42dz4qvzks8dwljnhlnh9j5rgdkdc8zp67igv57yfsfrwl91b";
   };
+
+  installFlags = [ "PREFIX=$(out)" ];
 
   nativeBuildInputs = [ gnumake ];
   buildInputs = [ ffmpeg xdotool slop libnotify ];
