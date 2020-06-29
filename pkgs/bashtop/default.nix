@@ -12,4 +12,12 @@ stdenv.mkDerivation rec {
   buildInputs = [ python3 ];
 
   installFlags = ["PREFIX=$(out)"];
+
+  meta = with stdenv.lib; {
+    description = "Resource monitor that shows usage and stats for processor, memory, disks, network and processes.";
+    homepage = https://github.com/aristocratos/bashtop;
+    license = licenses.mit;
+    maintainers = [ "Extends <sharosari@gmail.com>" ];
+    platforms = platforms.all;
+  ];
 }
