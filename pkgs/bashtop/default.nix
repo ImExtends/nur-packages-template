@@ -19,5 +19,5 @@ stdenv.mkDerivation rec {
     license = licenses.mit;
     maintainers = [ "Extends <sharosari@gmail.com>" ];
     platforms = platforms.all;
-  ];
+  };
 }
