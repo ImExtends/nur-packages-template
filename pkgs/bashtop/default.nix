@@ -5,7 +5,7 @@ stdenv.mkDerivation rec {
   src = fetchFromGitHub {
     owner = "aristocratos";
     repo = pname;
-    rev = "v${version}";
+    rev = "bb7643d43c1819021ab7a67b93d323a58ff94b4e";
     sha256 = "1gw9mslnq1f8516jd7l2ajh07g7a45z834jslpjai17p2ymhng9c";
   };
   nativeBuildInputs = [ gnumake ];
