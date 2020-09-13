@@ -6,7 +6,7 @@ stdenv.mkDerivation rec {
     owner = "aristocratos";
     repo = pname;
     rev = "v${version}";
-    sha256 = "154f99lpzvs4bm8r2l0dzkn82f7sf4g0qxdhzljrmzbssrfhbaiy";
+    sha256 = stdenv.lib.fakeSha256;
   };
   nativeBuildInputs = [ gnumake ];
   propagatedBuildInputs = [ python3 ];
